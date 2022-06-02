@@ -6,7 +6,7 @@ from wtforms_extras import Renderer
 
 
 class TestForm(Form):
-    text = TextField(u'Name', [validators.required()])
+    text = TextField(u'Name', [validators.data_required()])
     textarea = TextAreaField(u'Text Area')
     boolean = BooleanField('Boolean')
     date = DateField('Date')
